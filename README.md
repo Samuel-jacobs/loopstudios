@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![images/loopstudios-desktop.png](.images/loopstudios-desktop.png)
-![](.images/loopstudios-mobile.png)
+![](../images/loopstudios-desktop.png)
+![](../images/loopstudios-mobile.png)
 
 
 
