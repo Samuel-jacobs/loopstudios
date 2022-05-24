@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.google.com/specimen/Alata"  rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <main>
+    <header>
+
+      <div class="topnav" id="myTopnav">
+        <div class="nav-logo">
+          <img src="images/logo.svg" alt="logo image">
+        </div>
+        <div class="overlay" id="myNav">
+          <div class="overlay-top">
+            <div class="nav-logo">
+              <img src="images/logo.svg" alt="logo image">
+            </div>
+            <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()"><img src="images/icon-close.svg" alt="close icon"></a>
+          </div>
+          <div class="nav-links">
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Careers</a>
+            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#">Support</a>
+          </div>
+        </div>
+        <span onclick="openNav()" class="openBtn"><img src="images/icon-hamburger.svg"  alt="hamburger image"></span>
+       
+      </div>
+    
+    </header>
+    <section id="hero-section">
+      <div class="hero">
+        
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-hero.jpg">
+          <source media="(min-width: 768px)" srcset="images/desktop/image-hero.jpg">
+          <img src="images/desktop/image-hero.jpg" height="100%" width="100%">
+        </picture>
+        <div class="hero-caption">
+          <p>Immersive Experiences That Deliver</p>
+        </div>
+      </div>
+    </section>
+    <section id="section1">
+      <div class="section1-image">
+        <picture>
+          <source media="(max-width: 768px)" srcset="images/mobile/image-interactive.jpg">
+          <source media="(min-width: 768px)" srcset="images/desktop/image-interactive.jpg">
+          <img src="images/desktop/image-interactive.jpg" height="100%" width="100%">
+        </picture>
+      </div>
+      <div class="section1-text">
+        <h2>The leader in interactive VR</h2>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality  projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="portfolio-top">
+        <h2>Our creations</h2>
+        <button type="button" class="btn btn-outline-dark">SEE MORE</button>
+      </div>
+      
+      <div class="portfolio-wrapper row">
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-deep-earth.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-deep-earth.jpg">
+            <img src="images/desktop/image-deep-earth.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>Deep Earth</p>
+          </div>
+        </div>
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-night-arcade.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-night-arcade.jpg">
+            <img src="images/desktop/image-night-arcade.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>Night arcade</p>
+          </div>
+        </div>
+        
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-soccer-team.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-soccer-team.jpg">
+            <img src="images/desktop/image-soccer-team.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>Soccer team VR</p>
+          </div>
+        </div>
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-grid.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-grid.jpg">
+            <img src="images/desktop/image-grid.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>The <br> grid</p>
+          </div>
+        </div>
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-from-above.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-from-above.jpg">
+            <img src="images/desktop/image-from-above.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>From up above VR</p>
+          </div>
+        </div>
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-pocket-borealis.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-pocket-borealis.jpg">
+            <img src="images/desktop/image-pocket-borealis.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>Pocket borealis</p>
+          </div>
+        </div>
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-curiosity.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-curiosity.jpg">
+            <img src="images/desktop/image-curiosity.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>The curiosity</p>
+          </div>
+        </div>
+        <div class="potfolio-item col-sm-2 col-md-3">
+          <picture>
+            <source media="(max-width: 768px)" srcset="images/mobile/image-fisheye.jpg">
+            <source media="(min-width: 768px)" srcset="images/desktop/image-fisheye.jpg">
+            <img src="images/desktop/image-fisheye.jpg" height="100%" width="100%">
+          </picture>
+          <div class="portfolio-text">
+            <p>Make it fisheye</p>
+          </div>
+        </div>
+      </div> <!--end of portfolio wrapper -->
+      <button type="button" class="btn btn-bottom btn-outline-dark">SEE MORE</button>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="images/logo.svg" alt="logo image">
+          </div>
+          <div class="footer-links">
+            <a href="#"> About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+        
+        <div class="footer-right">
+          <div class="footer-icons">
+            <img src="images/icon-facebook.svg" alt="facebook icon">
+            <img src="images/icon-twitter.svg" alt="twitter icon">
+            <img src="images/icon-pinterest.svg" alt="pinterest icon">
+            <img src="images/icon-instagram.svg" alt="instagram icon">
+          </div>
+          <div class="copyright">
+            <p> &copy; Copyright Loopstudios 2022</p>
+          </div>
+          
+        </div> <!--end of footer right-->
+      </div> <!--end of footer-content-->
+      
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div> 
+    </footer>
+  </main>
+
+  <!--About
+  
+
+  Deep earth
+  Night arcade
+  Soccer team VR
+  The grid
+  From up above VR
+  Pocket borealis
+  The curiosity
+  Make it fisheye
+
+  © 2021 Loopstudios. All rights reserved.-->
+
+    <script src="control.js"></script>
+  <!--Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
