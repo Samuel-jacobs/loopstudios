@@ -98,7 +98,7 @@ a.icon {
 	max-width: 200px;
 	text-align: left;
 	padding-left: 30px;
-	padding-bottom: 10px;
+
 }
 .potfolio-item:hover .portfolio-text p {
 	color: black;
@@ -172,7 +172,15 @@ a.icon {
 	.overlay  a{
 		display: block;
 	}
-
+	
+	.hero-caption {
+		width: 90%;
+	}
+	.hero-caption .hero-caption-text {
+		font-size: 3rem;
+		width: 200px;
+	}
+	
 	#section1 {
 		padding: 80px 20px;
 	}
